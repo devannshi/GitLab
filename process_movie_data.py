@@ -25,7 +25,7 @@ def find_top_10(filename):
     top_ten = rows[:-11:-1]
 
     # Print out results
-    for i, row in enumerate(top_five):
+    for i, row in enumerate(top_ten):
         print("{ind}. {row[Title]} ({row[Year]}) - ${row[Gross]:,d}".format(
             ind=i+1,
             row=row))
