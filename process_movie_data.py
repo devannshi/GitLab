@@ -3,7 +3,7 @@
 import csv
 
 
-def find_top_5(filename):
+def find_top_n(filename, n = 5):
     """Finds the top 5 highest grossing movies in a CSV dataset.
        Input: filename, a string - points to filename of dataset
        Output: None
