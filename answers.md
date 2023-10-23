@@ -41,6 +41,7 @@ What branches would change, and how?
 git checkout test
 git merge top_N
 ```
+Merges top_N into test. top_N therefore stays the same, test would change. It get the code for n movies into the present code for 5 movies
 
 6. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -48,6 +49,7 @@ What branches would change, and how?
 git checkout top_ten
 git merge test
 ```
+Merges test into top_ten, with test staying the same. It will probably lead to a merge conflict.
 
 7. What do you think would happen if you ran the following commands?
 What branches would change, and how?
@@ -56,3 +58,5 @@ git checkout test
 git rebase top_ten
 git rebase top_N
 ```
+
+Gets the changes from the different branches into test, but causes a merge conflict as top_ten and top_N have made conflicting changes to the python file.
